@@ -4,7 +4,7 @@ import { getAllProducts } from "./api/fakeStore.js"
 const App = document.querySelector("#app")
  
 async function init () {
-  App.innerHTML = `<p class="state-message">Cargando productos...</p>`
+  App.innerHTML = "<p class=\"state-message\">Cargando productos...</p>"
  
   try {
     const productos = await getAllProducts()
