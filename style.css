@@ -41,8 +41,6 @@ header nav a:hover {
   color: #2f5d50;
 }
 
-/* ---------- Estados: cargando / error ---------- */
-
 .state-message {
   display: flex;
   flex-direction: column;
@@ -77,8 +75,6 @@ header nav a:hover {
 .state-message button:hover {
   opacity: 0.85;
 }
-
-/* ---------- Grid de productos ---------- */
 
 .grid {
   display: grid;
@@ -186,9 +182,37 @@ footer {
   font-size: 0.8rem;
 }
 
-/* ---------- Responsive breakpoints ---------- */
+.product-detail {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-/* Tablet: <= 768px */
+.detail-image img {
+  max-width: 350px;
+  width: 100%;
+}
+
+.detail-info {
+  max-width: 500px;
+}
+
+.detail-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.back-link {
+  color: #2f5d50;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 12px 20px;
@@ -205,7 +229,6 @@ footer {
   }
 }
 
-/* Mobile: <= 480px */
 @media (max-width: 480px) {
   header {
     flex-direction: column;
@@ -228,5 +251,14 @@ footer {
 
   .card-image {
     height: 200px;
+  }
+
+  .product-detail {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .detail-image img {
+    max-width: 100%;
   }
 }
