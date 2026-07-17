@@ -2,11 +2,5 @@
   "name": "fake-store",
   "version": "1.0.0",
   "description": "Segundo parcial de Ingeniería de requisitos - Fake Store Frontend",
-  "type": "module",
-  "scripts": {
-    "lint": "eslint js/**/*.js"
-  },
-  "devDependencies": {
-    "eslint": "^9.0.0"
-  }
+  "type": "module"
 }
